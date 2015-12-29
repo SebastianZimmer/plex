@@ -1,0 +1,239 @@
+﻿#chorusIMG{
+	width: 82px;
+	height: 101px;
+	padding: 10px;
+}
+
+#LINK_custom_select{
+	height: 75px;
+	width: 75px;
+	border:8px solid #000000;
+}
+
+#LINK_custom_select:hover {
+ 	border:8px solid #AAAAFF; 
+}
+
+#customwaveTABLE{
+	display:none;
+	color:black;
+	font-size:large;
+	border-spacing: 0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+#delayIMG{
+	width: 139px;
+	height: 75px;
+	padding: 20px 0px;
+}
+
+#delayTABLE{
+	margin-right: 4px;
+}
+
+
+#overdriveIMG{
+	width: 139px;
+	height: 50px;
+	padding: 40px 10px;
+}
+
+
+#reverbIMG{
+	width: 77px;
+	height: 75px;
+	padding: 30px; 
+}
+
+
+#detuneSPAN{
+	background: #0033FF;  /* 255 127 39   */
+	border:8px solid #000000;
+    padding:6px 24px;
+	text-decoration:none;
+	color:#000000;
+
+
+}
+
+
+#LINK_forte_pedal{
+	height: 150px;
+}
+
+#detuneIMG{
+	width: 90px;
+	height: 22px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#detuneDISP{
+    color:white;
+}
+
+#filtermainTABLE{
+	
+	border-spacing:0px;
+}
+
+#LINK_filterpower{
+	background-color: #22B14C;
+	cursor: pointer;
+	
+}
+
+#fork{
+	height: 60px;
+	padding: 10px;
+}
+
+#fxDIV{
+	background-color: #FFFF99;
+}
+
+#fxmainTABLE{
+	border-spacing:0px;
+	
+	}
+
+#fxonoffIMG {
+	text-align:center;
+	width: 64px;
+	height: 71px;
+ 	}
+
+#fxpower{
+	background-color: #9966FF;
+	border-color:red;
+}
+
+#masterTABLE{
+	background-color: #FE6954;
+	width: 100%;
+}
+
+
+#masterDIV{
+	background-color: #FE6954;
+	width: 100%;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+
+#miscTABLE{
+	border-spacing: 0px;
+	margin: 10px;
+}
+
+#LINK_no_wave_select{
+	height: 75px;
+	width: 75px;
+	background-color:#FF3300;
+}
+
+#onoffimage {
+	text-align:center;
+	width: 64px;
+	height: 71px;
+	padding: 18px;
+ 	}
+ 	
+
+.block{
+
+	margin:0px;
+
+}
+
+#osc_settingsDIV{
+	background-color: #FF9999;
+}
+	
+#OSCroutingSPAN {
+	background-color:#bb88ff;
+	
+	
+background-image: linear-gradient(left , rgb(34,177,77) 24%, rgb(153,102,255) 75%);
+background-image: -moz-linear-gradient(left , rgb(34,177,77) 24%, rgb(153,102,255) 75%);
+background-image: -webkit-linear-gradient(left , rgb(34,177,77) 24%, rgb(153,102,255) 75%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	right bottom,
+	color-stop(0.24, rgb(34,177,77)),
+	color-stop(0.75, rgb(153,102,255))
+);
+	
+	padding: 6px 24px;
+	
+}
+
+#OSCvolumespan {
+	background-color:#bb88ff;
+	padding:6px 24px; 
+}
+
+#SELECT_presets{
+	
+	background-color:#0033ff;
+	border:8px solid #000000;
+	color:#ffffff;
+	font-size:28px;
+	 padding-top:9px;
+	 padding-bottom:9px;
+	 padding-left:12px;
+	 padding-right: 0px;
+
+	
+	
+}
+
+#SLIDER_mastertune{
+	width: 565px;
+}
+
+#volumespan {
+	background-color:#ffff00;
+	padding:6px 24px; 
+}
+
+.vsselector {
+	border:8px solid red;
+	width: 141px;
+	height: 150px;
+	background-color:#00A2E8;
+}.vsselector:hover {
+}.vsselector:active {
+	position:relative;
+	top:2px;
+}
+
+#wavecanvas{
+	height:200px;
+	width:400px;
+	background-color:#0066FF;
+	border:8px solid black;
+	font-size: x-large;
+	color: black;
+}
+
+#waveselectDIV{
+	
+	white-space:normal;
+	
+}
+
+#sine_select,#square_select,#sawtooth_select,#triangle_select{
+	width:230px;
+	height:75px;
+}
+
+#hp_select,#lp_select{
+	width: 191px;
+	height:107px;
+}
+

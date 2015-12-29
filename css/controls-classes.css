@@ -1,0 +1,161 @@
+﻿.detune_slider{
+	width:200px;
+}
+
+.tile{
+	display: inline-block;
+	border:8px solid black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:28px;
+	margin: 2px;
+}
+
+.filtertable {
+ 	background-color: #22B14C;
+	padding-right: 10px;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.fxpropertySPAN{
+	font-size:small;
+}
+
+.fxTABLE {
+ 	background-color: #9966FF;
+ 	text-align:left;
+ 	height: 130px;
+ 	width: 362px;
+ 	margin-right: 4px;
+ 	margin-left:0px;
+ 	overflow:hidden;
+}
+
+.fxTD{
+/*	margin-top:4px;*/
+	padding-top:4px;
+}
+
+.oscselector {
+	background-color:#0033ff;
+	color:#ffffff;
+	font-size:28px;
+	font-weight:normal;
+    padding:6px 24px;
+	text-decoration:none;
+}.oscselector:hover {
+	border:8px solid #AAAAFF; 
+}.oscselector:active {
+	position:relative;
+	top:2px;
+}
+
+#panic_button {
+	background-color:#ff0000;
+	color:#000000;
+	cursor: pointer;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding:6px 24px;
+}#panic_button:hover {
+	background-color:#ff0000;
+ 	border:8px solid #AAAAFF; 
+
+}#panic_button:active {
+	position:relative;
+	top:1px;
+}
+
+.pedalselector:hover {
+	border:8px solid #AAAAFF;
+}.pedalselector:active {
+	position:relative;
+	top:2px;
+}
+
+.power {
+text-align:center;
+	border:8px solid black;
+ 	width: 85px;
+ 	border-spacing:0px 0px;
+}.power:hover {
+	border:8px solid #AAAAFF;
+}.power:active {
+	position:relative;
+	top:2px;
+}
+
+.subtile_div{
+
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.row{
+	padding: 10px;
+	display: block;
+}
+
+.propertiesTD{
+	
+	text-align:right;
+}
+
+.osc_selector{
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px;
+	background-color: rgb(0, 51, 255);
+}
+
+.routing_icon {
+	padding: 0px;
+	margin: 0px;
+	height: 22px;
+	width:  32px;	
+}
+
+
+.tp_symbol {
+	height: 60px;
+	padding: 10px;
+	}
+
+#transposetable {
+ 	background-color: #FF4683;
+}
+
+#tuneTABLE {
+	background-color: #FF6699;
+	padding-right: 10px;
+}
+
+.volume_icon {
+	padding: 0px;
+	margin: 0px;
+	height: 22px;
+	width:  55px;	
+}
+
+.waveselector {
+ 	background-color:#0033FF;
+	cursor: pointer;
+}
+
+.waveselector:hover {
+	border:8px solid #AAAAFF;
+}.waveselector:active {
+	position:relative;
+	top:2px;
+}
+
+.waveslider{
+	width:500px;
+}
+
+.wavesliderSPAN{
+	font-size:large;
+}
+

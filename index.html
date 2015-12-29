@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>PLEX</title>
+	  
+	  
+		<link rel="stylesheet" type="text/css" href="css/controls.css">
+		<link rel="stylesheet" type="text/css" href="css/controls-classes.css">
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="css/keyboard.css">    
+
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="image_src" href="http://oneinagoogolplex.de/plex/img/preview_image.jpg" /> 
+
+	</head>
+
+	<body id="body">
+
+
+		<div id="VIEW_about"><span id="infoSPAN">
+			PLEX is an online musical instrument using Web Audio API and Web MIDI API.<br><br>
+			Developed by Sebastian Zimmer<br><br>
+			This application makes use of<br>
+			<a class='weblink' target='_blank' href='http://github.com/Dinahmoe/tuna'>Tuna</a><br>
+		</div>
+
+
+		<div id="footer"></div>
+
+
+		<div id="titleDIV">
+			<div id="titleImgDIV"><img alt="Plex" src="img/plex.png" id="plex" title="PLEX"></div>
+			<div id="LINK_about" class="navDIV" title="Info">about</div>
+		</div>
+
+
+
+		<div id="controls">
+
+			<div class="row">
+				<div id="volumespan" class="tile">
+					<img id="volume_icon" class="volume_icon" src="img/volume_icon2.png" alt="Lautstärke">
+					<span id="DISP_volume">100</span>
+				</div>
+
+				<div id="panic_button" class="tile" title="Panic!">!</div>
+			</div>
+			
+			<div class="row">
+				<div class="tile" id="tuneTABLE" title="Master Tune">
+					<div id="LINK_reset_masterTune" class="subtile_div">
+						<img id="fork" src="img/fork.png" alt="Master Tune" title="Reset Master Tune">
+					</div>
+					<div class="subtile_div">
+						<span id="DISP_tune"></span>
+					</div>
+				</div>	
+			
+				<div id="transposetable" class="tile" title="Transposer">
+					<div class="subtile_div">
+						<img class="tp_symbol" src="img/flat.png" alt="Down">
+					</div>
+					<div class="subtile_div">
+						<span id="DISP_transpose"></span>
+					</div>
+					<div class="subtile_div">
+						<img class="tp_symbol" src="img/sharp.png" alt="Up">
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="row">
+				<img id="LINK_forte_pedal" class="pedalselector tile" src="img/forte_pedal.png" alt="Forte-Pedal"title="Forte pedal">
+
+				<img id="LINK_velocity_sensitivity" class="vsselector tile" src="img/vs.png" alt="Anschlagsdynamik" title="Velocity sensitivity">
+
+			</div>
+
+			<div id="oscselectDIV" class="row">
+				<div class="osc_selector tile" id="LINK_oscselect0">O1</div>
+				<div class="osc_selector tile" id="LINK_oscselect1">O2</div>
+				<div class="osc_selector tile" id="LINK_oscselect2">O3</div>
+				<div class="osc_selector tile" id="LINK_oscreset">Reset OSC</div>
+				<!--<select name="presetSELECT" id="SELECT_presets"></select>-->
+			</div>
+
+
+			<div class="block" id="osc_settingsDIV">
+				<div class="heading">Oscillator</div>
+				
+				<div class="row" id="waveselectDIV">
+					<img id="LINK_no_wave_select" class="waveselector tile" src="img/no_wave.png" alt="Offline" title="Oscillator offline">
+					<img id="LINK_sine_select" class="waveselector tile" src="img/sine.png" alt="Sinus-Schwingung" title="Sinus wave">
+					<img id="LINK_square_select" class="waveselector tile" src="img/square.png" alt="Rechteck-Schwingung" title="Square wave">
+					<img id="LINK_sawtooth_select" class="waveselector tile" src="img/sawtooth.png" alt="Sägezahn-Schwingung" title="Sawtooth wave">
+					<img id="LINK_triangle_select" class="waveselector tile" src="img/triangle.png" alt="Dreieck-Schwingung" title="Triangle wave">
+					<img id="LINK_custom_select" class="waveselector tile" src="img/pen2.png" alt="Custom waveform" title="Custom waveform">
+				</div>
+			
+				<div class="row" id="customwaveTABLE">
+					<canvas class="tile" id="wavecanvas" width="400" height="200"></canvas>
+
+						<div class="inline-block">
+							<input id="cs1" type="range" max="100" min="0" value="0" step="1" class="waveslider" />
+							<span class="wavesliderSPAN" id="cd1">0</span><br>
+							<input id="cs2" type="range" max="100" min="0" value="0" step="1" class="waveslider" />
+							<span class="wavesliderSPAN" id="cd2">0</span><br>
+							<input id="cs3" type="range" max="100" min="0" value="0" step="1" class="waveslider" />
+							<span class="wavesliderSPAN" id="cd3">0</span><br>
+							<input id="cs4" type="range" max="100" min="0" value="0" step="1" class="waveslider" />
+							<span class="wavesliderSPAN" id="cd4">0</span><br>
+							<input id="cs5" type="range" max="100" min="0" value="0" step="1" class="waveslider" />
+							<span class="wavesliderSPAN" id="cd5">0</span><br>
+							<input id="cs6" type="range" max="100" min="0" value="0" step="1" class="waveslider" />
+							<span class="wavesliderSPAN" id="cd6">0</span><br>
+							<input id="cs7" type="range" max="100" min="0" value="0" step="1" class="waveslider" />
+							<span class="wavesliderSPAN" id="cd7">0</span><br>
+						</div>
+				</div>
+			
+
+				<div class="row" id="synth2DIV">
+					<div class="tile" id="detuneSPAN" title="Detune">
+						<img alt="Detune" id="detuneIMG" src="img/detune.png" title="Reset Detune">
+						<span id="detuneDISP">
+						<span id="DISP_detune_semitones"></span>.<span id="DISP_detune_cents"></span>
+						</span>
+					</div>
+
+					<div class="tile" id="OSCvolumespan">
+						<img class="volume_icon" src="img/volume_icon2.png" alt="Oscillator volume" title="Oscillator volume">
+						<span id="DISP_OSCvolume">100</span>
+					</div> 
+					
+					<div class="tile" id="OSCroutingSPAN" title="Routing">
+						<img class="routing_icon" src="img/routing.png" alt="Routing" title="Routing">
+						Master
+						<input id="SLIDER_OSCRouting" type="range" max="100" min="0" value="0" step="1" title="Routing"/>
+						FX
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="block" id="fxDIV">
+				<div class="heading">FX</div>
+
+				<div class="row" id="fxmainTABLE">
+
+					<div id="chorusTABLE" class="fxTABLE tile" title="Chorus">
+						<div id="LINK_fx_chorus" class="subtile_div">
+							<img id="chorusIMG" class="fxIMG" src="img/chorus.png" alt="Chorus">
+						</div>
+						<div class="subtile_div propertiesTD">
+							<span class="fxpropertySPAN">Feedback</span>
+							<input id="SLIDER_fx_chorus_feedback" type="range" max="1" min="0" value="0.8" step="0.01" /><br>   
+							<span class="fxpropertySPAN">Rate</span>
+							<input id="SLIDER_fx_chorus_rate" type="range" max="8" min="0.01" value="1" step="0.01" /><br>  
+						</div>
+					</div>
+
+					<div id="delayTABLE" class="fxTABLE tile" title="Delay">
+						<div id="LINK_fx_delay" class="subtile_div">
+							<img id="delayIMG" class="fxIMG" src="img/delay.png" alt="Delay">
+						</div>
+						<div class="subtile_div propertiesTD">
+							<span class="fxpropertySPAN">Feedback</span>
+							<input id="SLIDER_fx_delay_feedback" type="range" max="1" min="0" value="0" step="0.01"/><br>  
+							<span class="fxpropertySPAN">Time</span>  
+							<input id="SLIDER_fx_delay_time" type="range" max="3000" min="10" value="300" step="1"/><br>  
+							<span class="fxpropertySPAN">Wet/Dry</span>  
+							<input id="SLIDER_fx_delay_wet" type="range" max="1" min="0" value="0" step="0.01"/>
+						</div>
+					</div>
+
+					<div id="overdriveTABLE" class="fxTABLE tile" title="Overdrive">
+						<div id="LINK_fx_overdrive" class="subtile_div">
+							<img id="overdriveIMG" class="fxIMG" src="img/overdrive.png" alt="Overdrive">
+						</div>
+						<div class="subtile_div propertiesTD">
+							<span class="fxpropertySPAN">Drive</span>
+							<input id="SLIDER_fx_overdrive_drive" type="range" max="1" min="0" value="0" step="0.01"/><br>  
+							<span class="fxpropertySPAN">Curve</span>  
+							<input id="SLIDER_fx_overdrive_curve" type="range" max="1" min="0" value="0" step="0.01"/><br>  
+							<span class="fxpropertySPAN">Output</span>  
+							<input id="SLIDER_fx_overdrive_output" type="range" max="1" min="0" value="0" step="0.01"/>
+						</div>
+					</div> <!-- overdriveTABLE -->
+
+					
+					<div id="reverbTABLE" class="fxTABLE tile" title="Reverb">
+						<div id="LINK_fx_reverb" class="subtile_div">
+							<img id="reverbIMG" class="fxIMG" src="img/reverb.png" alt="Reverb">
+						</div>
+						<div class="subtile_div propertiesTD">
+							<span class="fxpropertySPAN">High Cut</span>
+							<input id="SLIDER_fx_reverb_highcut" type="range" max="22050" min="20" value="22050" step="1" /><br>  
+							<span class="fxpropertySPAN">Low Cut</span>  
+							<input id="SLIDER_fx_reverb_lowcut" type="range" max="22050" min="20" value="20" step="1" /><br>  
+							<span class="fxpropertySPAN">Wet/Dry</span>  
+							<input id="SLIDER_fx_reverb_wet" type="range" max="1" min="0" value="0" step="0.01" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="block" id="masterDIV">
+				<div class="heading">Master</div>
+
+				<div class="row" id="filtermainTABLE">
+
+					<div id="lowpassTABLE" class="filtertable tile" title="High Pass Filter">
+						<div class="subtile_div">
+							<img id="lp_select" class="filterselector" src="img/lowpass.png" alt="Lowpass-Filter">
+						</div>
+						<div class="subtile_div">
+							<span id="DISP_LP"></span>
+						</div>
+					</div>
+
+					<div class="filtertable tile" title="Low Pass Filter">
+						<div class="subtile_div">
+							<img id="hp_select" class="filterselector" src="img/highpass.png" alt="Highpass-Filter" />
+						</div>
+						<div class="subtile_div">
+							<span id="DISP_HP"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+		
+		
+		
+		<script src="js/presets.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/dom.js"></script> 
+		<script src="js/app.js"></script>
+		<script src="js/helpers.js"></script>
+		<script src="js/gui.js"></script>
+		<script src="js/synth.js"></script>
+		<script src="js/osc.js"></script>
+		<script src="js/tuna.js"></script>
+		<script src="js/mouseslider.js"></script>
+
+	</body>
+</html>
